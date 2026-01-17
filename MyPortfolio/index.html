@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Irshad Ansari | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" aria-label="Toggle navigation" class="mobile-menu-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <img src="logos/profileSmall.jpg" alt="Irshad Profile" class="profile-img-nav"
+                    onerror="this.src='https://via.placeholder.com/150'">
+                <h2>Md Irshad Ansari</h2>
+                <p class="role-subtitle">CSE Student & Dev</p>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">🏠 Home</a></li>
+                    <li><a href="#about" class="nav-link">👨‍💼 About</a></li>
+                    <li><a href="#education" class="nav-link">📚 Education</a></li>
+                    <li><a href="#skills" class="nav-link">🧑‍💻 Skills</a></li>
+                    <li><a href="#projects" class="nav-link">⚒️ Projects</a></li>
+                    <li><a href="#contact" class="nav-link">📞 Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>© 2026 Irshad</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+
+            <!-- Hero Section -->
+            <section id="home" class="section hero-section">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span class="highlight">Irshad</span> 👋</h1>
+                    <p class="hero-subtitle">Aspiring Software Engineer & Web Developer</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn primary-btn">Contact Me</a>
+                        <a href="#projects" class="btn secondary-btn">View Projects</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section about-section">
+                <h2 class="section-title">Personal Info</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I am Md Irshad Ansari, a Computer Science and Engineering student at University Institute of
+                            Technology, Burdwan University. Based in West Bengal, India, I am passionate about crafting
+                            innovative software solutions.</p>
+                        <p>My journey involves deep diving into Full Stack Development, AI, and Machine Learning. I
+                            thrive on learning new technologies and solving complex problems.</p>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <!-- Fallback added if image source is empty/broken in original -->
+                        <img id="dynamic-image" src="img1.jpg" alt="Irshad" class="about-img"
+                            onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section education-section">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline-grid">
+                    <!-- Item 1 -->
+                    <div class="edu-card">
+                        <div class="edu-year">2026 (Expected)</div>
+                        <h3>B.E. in Computer Science</h3>
+                        <div class="institution">University Institute of Technology</div>
+                        <div class="university">The University of Burdwan</div>
+                        <div class="score">SGPA: 8.89</div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="edu-card">
+                        <div class="edu-year">2021</div>
+                        <h3>Higher Secondary</h3>
+                        <div class="institution">Burdwan Shri Ramashish Hindi High School</div>
+                        <div class="university">WBCHSE</div>
+                        <div class="score">75.4%</div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="edu-card">
+                        <div class="edu-year">2019</div>
+                        <h3>Secondary</h3>
+                        <div class="institution">SR Hindi High School</div>
+                        <div class="university">WBBSE</div>
+                        <div class="score">70.71%</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section skills-section">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>💻 Programming</h3>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C/C++</span>
+                            <span class="tag">DSA</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>🎨 Frontend</h3>
+                        <div class="tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Pug</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>⚙️ Backend & DB</h3>
+                        <div class="tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-area">
+                    <a href="profileSmall.jpg" class="btn download-btn">Download Resume 📄</a>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section projects-section">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Dear’s Dance Academy</h3>
+                        <p class="project-tech">Node.js • Pug • MongoDB</p>
+                        <p>A full-stack dance school website with contact forms and course information.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Burdwan City Portal</h3>
+                        <p class="project-tech">HTML • CSS</p>
+                        <p>An informative landing page showcasing the culture and spots of Burdwan city.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Web Calculator</h3>
+                        <p class="project-tech">JavaScript</p>
+                        <p>A fully functional arithmetic calculator with a modern interface.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact-section">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <a href="mailto:irshadmd92236@gmail.com">irshadmd92236@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>📱</span>
+                            <span>+91 8918590754</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/md-irshad-ansari-98192b251" target="_blank"><img
+                                src="logos/in.jpg" alt="LinkedIn" class="social-icon-img"></a>
+                        <a href="https://github.com/IrshadCodes7" target="_blank"><img src="logos/hub.png" alt="GitHub"
+                                class="social-icon-img"></a>
+                        <a href="https://instagram.com/cosmicking_arshad" target="_blank"><img src="logos/insta.png"
+                                alt="Instagram" class="social-icon-img"></a>
+                        <a href="https://facebook.com" target="_blank"><img src="logos/fb.jpg" alt="Facebook"
+                                class="social-icon-img"></a>
+                    </div>
+                </div>
+                <footer>
+                    <p>Made with ❤️ by Irshad</p>
+                </footer>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        // Simple Image Slider logic
+        const images = ["img1.jpg", "img2.jpg", "img3.jpg", "img5.jpg"];
+        let imgIndex = 0;
+        const imgElement = document.getElementById('dynamic-image');
+
+        if (imgElement) {
+            setInterval(() => {
+                imgIndex = (imgIndex + 1) % images.length;
+                imgElement.src = images[imgIndex];
+            }, 3000);
+        }
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const sidebar = document.getElementById('sidebar');
+
+        if (menuBtn) {
+            menuBtn.addEventListener('click', () => {
+                sidebar.classList.toggle('active');
+                menuBtn.classList.toggle('open');
+            });
+        }
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                menuBtn.classList.remove('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
