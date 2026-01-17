@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive JavaScript Calculator with modern design">
+    <title>Premium Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator-wrapper">
+        <div class="container" id="calculator">
+            
+            <div class="screen" id="display-screen">
+                <div class="fullInput" id="full-expression"></div>
+                <div class="currInput" id="current-display">0</div>
+            </div>
+
+            <div class="keyboard" id="button-grid">
+
+                <div class="row">
+                    <button class="seven num" id="btn-7" aria-label="Seven">7</button>
+                    <button class="eight num" id="btn-8" aria-label="Eight">8</button>
+                    <button class="nine num" id="btn-9" aria-label="Nine">9</button>
+                    <button class="div oprator" id="btn-divide" aria-label="Divide">÷</button>
+                </div>
+
+                <div class="row">
+                    <button class="four num" id="btn-4" aria-label="Four">4</button>
+                    <button class="five num" id="btn-5" aria-label="Five">5</button>
+                    <button class="six num" id="btn-6" aria-label="Six">6</button>
+                    <button class="mul oprator" id="btn-multiply" aria-label="Multiply">×</button>
+                </div>
+
+                <div class="row">
+                    <button class="one num" id="btn-1" aria-label="One">1</button>
+                    <button class="two num" id="btn-2" aria-label="Two">2</button>
+                    <button class="three num" id="btn-3" aria-label="Three">3</button>
+                    <button class="minus oprator" id="btn-subtract" aria-label="Subtract">−</button>
+                </div>
+
+                <div class="row">
+                    <button class="clear oprator" id="btn-clear" aria-label="Clear">AC</button>
+                    <button class="zero num" id="btn-0" aria-label="Zero">0</button>
+                    <button class="decimal num" id="btn-decimal" aria-label="Decimal">.</button>
+                    <button class="plus oprator" id="btn-add" aria-label="Add">+</button>
+                </div>
+
+                <div class="row">
+                    <button class="equal oprator" id="btn-equal" aria-label="Equals">=</button>
+                </div>
+            </div>
+     
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
